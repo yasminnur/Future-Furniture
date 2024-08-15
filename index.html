@@ -18,7 +18,7 @@
     </style>
   </head>
   <body>
-    <div class="w-100 px-5 py-4 md:px-11 md:py-7">
+    <div class="w-100 px-4 py-4 md:px-11 md:py-7">
       <!-- NAVBAR -->
       <nav
         class="navbar w-full px-4 py-3 md:px-5 md:py-6 bg-gray-200 flex rounded-3xl align-items-center mb-4"
@@ -89,7 +89,7 @@
       <!-- SECTION 1 -->
       <section class="mt-5">
         <div
-          class="relative w-full h-[600px] bg-red-300 overflow-hidden rounded-3xl"
+          class="relative w-full h-[550px] md:h-[600px] bg-red-300 overflow-hidden rounded-xl md:rounded-3xl"
         >
           <img
             src="./assets/main-wp.jpg"
@@ -97,19 +97,19 @@
             class="absolute inset-0 w-full h-full object-cover"
           />
           <h1
-            class="absolute text-9xl font-extrabold uppercase text-wrap inset-x-10 top-6 text-white/70"
+            class="absolute text-5xl md:text-9xl font-extrabold uppercase text-wrap inset-x-4 md:inset-x-10 top-3 md:top-6 text-white/70"
           >
             FUTURE FOR NOW OR FOREVER
           </h1>
           <div
-            class="absoulte-input inset-x-5 absolute px-6 py-4 bottom-6 bg-white grid grid-cols-4 rounded-2xl gap-5"
+            class="absoulte-input inset-x-3 md:inset-x-5 absolute px-3 py-2 md:px-6 md:py-4 bottom-4 md:bottom-6 bg-white grid grid-rows-4 grid-cols-1 md:grid-cols-4 md:grid-rows-1 rounded-xl md:rounded-2xl gap-2 md:gap-3"
           >
-            <div class="colom-1 flex flex-col gap-3">
-              <label for="" class="text-normal">Made By</label>
+            <div class="kolom-1 flex flex-col gap-2 md:gap-3">
+              <label for="" class="text-sm text-normal md:text-lg">Made By</label>
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border-2 border-black rounded-lg p-2"
+                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
               >
                 <option value="wood">Wood</option>
                 <option value="saab">Saab</option>
@@ -117,12 +117,12 @@
                 <option value="audi">Audi</option>
               </select>
             </div>
-            <div class="colom-2 flex flex-col gap-3">
-              <label for="" class="text-normal">Select Type</label>
+            <div class="kolom-2 flex flex-col gap-2 md:gap-3">
+              <label for="" class="text-sm text-normal md:text-lg">Select Type</label>
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border-2 border-black rounded-lg p-2"
+                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
               >
                 <option value="wood">Sofa</option>
                 <option value="saab">Saab</option>
@@ -130,12 +130,12 @@
                 <option value="audi">Audi</option>
               </select>
             </div>
-            <div class="colom-3 flex flex-col gap-3">
-              <label for="" class="text-normal">Price</label>
+            <div class="kolom-3 flex flex-col gap-2 md:gap-3">
+              <label for="" class="text-sm text-normal md:text-lg">Price</label>
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border-2 border-black rounded-lg p-2"
+                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
               >
                 <option value="wood">$129-$359</option>
                 <option value="saab">Saab</option>
@@ -143,49 +143,49 @@
                 <option value="audi">Audi</option>
               </select>
             </div>
-            <div class="colom-4 flex flex-col gap-3">
-              <label for="" class="text-normal text-white/0">search</label>
-             <button class="border-2 border-black bg-gray-950 rounded-lg p-2 text-white">Search</button>
+            <div class="kolom-4 flex flex-col gap-3">
+              <label for="" class="text-sm text-normal md:text-lg text-white/0 hidden md:flex">search</label>
+             <button class="text-sm text-normal md:text-lg border-2 border-black bg-gray-950 rounded-lg p-2 text-white mt-4 md:mt-0">Search</button>
             </div>
           </div>
         </div>
       </section>
 
       <!-- SECTION 2 -->
-      <section class="">
-        <div class="our-collection-nav flex justify-between items-center mb-3">
-          <h1 class="text-5xl font-medium text-gray-800 capitalize">
+      <section class="mt-14">
+        <div class="our-collection-nav flex justify-between items-center mb-4 md:mb-3">
+          <h1 class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize">
             Our Collections
           </h1>
           <div
-            class="flex items-center justify-center w-32 h-32 p-5 border-2 border-gray-600 rounded-full"
+            class="flex items-center justify-center w-14 h-14 md:w-32 md:h-32 p-2 md:p-5 border-2 border-gray-600 rounded-full"
           >
-            <h5 class="hidden md:flex text-gray-600 font-semibold">View All</h5>
+            <h5 class="flex text-gray-600 font-semibold text-[10px] md:text-lg text-nowrap">View All</h5>
           </div>
         </div>
         <div class="our-collection-card">
           <div class="grid w-full md:grid-cols-3 gap-5">
             <!-- CARD 1 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Best sale
                 </button>
-                <p class="text-base capitalize">6 Colors</p>
+                <p class="text-sm md:text-base capitalize">6 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
-                <img src="./assets/card2.png" alt="" class="w-auto h-72" />
+                <img src="./assets/card2.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize">Papillon wally Light</p>
-                  <h3>$40.00</h3>
+                  <p class="capitalize text-sm md:text-base">Papillon wally Light</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$40.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -197,25 +197,25 @@
 
             <!-- CARD 2 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Top Rated
                 </button>
-                <p class="text-base capitalize">3 Colors</p>
+                <p class="text-sm md:text-base capitalize">3 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
-                <img src="./assets/card2.png" alt="" class="w-auto h-72" />
+                <img src="./assets/card2.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize">Pilke Pendant Lamp</p>
-                  <h3>$34.00</h3>
+                  <p class="capitalize text-sm md:text-base">Pilke Pendant Lamp</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$34.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -227,25 +227,25 @@
 
             <!-- CARD 3 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-base capitalize">1 Colors</p>
+                <p class="text-sm md:text-base capitalize">1 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
-                <img src="./assets/card3.png" alt="" class="w-auto h-72" />
+                <img src="./assets/card3.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize">Low Oak Stool</p>
-                  <h3>$30.00</h3>
+                  <p class="capitalize text-sm md:text-base">Low Oak Stool</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$30.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -257,25 +257,25 @@
 
             <!-- CARD 4 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-base capitalize">1 Colors</p>
+                <p class="text-sm md:text-base capitalize">1 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
-                <img src="./assets/lamp2.ashx" alt="" class="w-auto h-72" />
+                <img src="./assets/lamp2.ashx" alt="" class="w-auto h-40 md:h-72 object-cover" />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize">Orient Pendant Lamp</p>
-                  <h3>$52.00</h3>
+                  <p class="capitalize text-sm md:text-base">Orient Pendant Lamp</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$52.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -287,25 +287,25 @@
 
             <!-- CARD 5 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Best Sale
                 </button>
-                <p class="text-base capitalize">6 Colors</p>
+                <p class="text-sm md:text-base capitalize">6 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
-                <img src="./assets/card5.png" alt="" class="w-auto h-72" />
+                <img src="./assets/card5.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auro"
               >
                 <div class="desc">
-                  <p class="capitalize">Papillon wally Light</p>
-                  <h3>$40.00</h3>
+                  <p class="capitalize text-sm md:text-base">Papillon wally Light</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$40.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -317,25 +317,25 @@
 
             <!-- CARD 6 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-base capitalize">1 Colors</p>
+                <p class="text-sm md:text-base capitalize">1 Colors</p>
               </div>
               <div class="flex justify-center flex-grow">
-                <img src="./assets/card6.png" alt="" class="w-auto h-72" />
+                <img src="./assets/card6.png" alt="" class="w-auto h-40 md:h-72 object-cover" />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize">Grey Sofa</p>
-                  <h3>$76.00</h3>
+                  <p class="capitalize text-sm md:text-base">Grey Sofa</p>
+                  <h3 class="capitalize text-base md:text-lg font-semibold">$76.00</h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -350,33 +350,33 @@
 
       <!-- SECTION 3 -->
       <section class="mt-14">
-        <h1 class="text-5xl font-medium text-gray-800 mb-8 capitalize">
+        <h1 class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize">
           Furniture quality
         </h1>
         <div
-          class="content grid grid-cols-3 gap-10 min-h-[500px] max-h-[500px]"
+          class="content grid w-full md:grid-cols-3 gap-y-4 mt-3 md:mt-0 md:gap-x-10 md:min-h-[500px] md:max-h-[500px]"
         >
-          <div class="flex flex-col justify-end py-10">
-            <h5 class="text-2xl font-bold mb-5 text-gray-700">
+          <div class="flex flex-col md:justify-end md:py-10 gap-y-2 md:gap-y-5">
+            <h5 class="text-lg md:text-2xl font-bold text-gray-700">
               (*) Bedside Table
             </h5>
-            <p class="indent-32 text-lg leading-relaxed text-wrap">
+            <p class="md:indent-32 text-sm md:text-lg leading-relaxed text-wrap text-justify">
               Things You Need To Know There are many variations of passages of
               Lorem Ipsum available.
             </p>
           </div>
           <div
-            class="col-span-2 flex relative justify-center items-center cursor-pointer rounded-3xl"
+            class="w-full md:col-span-2 flex relative min-h-[300px] max-h-[300px] md:h-full overflow-hidden justify-center items-center cursor-pointer rounded-xl md:rounded-3xl"
           >
             <img
               src="./assets/vidio.jpg"
               alt=""
-              class="w-full min-h-[500px] max-h-[500px] object-cover rounded-3xl"
+              class="absolute inset-0 w-full h-full object-cover"
             />
             <div
               class="flex absolute w-full h-full justify-center items-center rounded-3xl bg-bg-slate-100/0 hover:bg-slate-100/20 border-2 border-transparent hover:border-black"
             >
-              <i class="fa-solid fa-play-circle text-7xl"></i>
+              <i class="fa-solid fa-play-circle text-4xl md:text-7xl"></i>
             </div>
           </div>
         </div>
@@ -384,17 +384,17 @@
 
       <!-- SECTION 4 -->
       <section class="mt-14">
-        <div class="head-container grid md:grid-cols-6 gap-3">
+        <div class="head-container grid md:grid-cols-6 gap-y-3 md:gap-3 mb-4 md:mb-0">
           <div class="flex col-span-5">
             <h1
-              class="text-5xl font-medium text-gray-800 mb-8 capitalize leading-normal text-wrap"
+            class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize"
             >
               Shop Our Best <br />
               Quality Product
             </h1>
           </div>
           <div class="flex flex-col">
-            <h5 class="text-lg text-wrap">
+            <h5 class="text-sm md:text-lg text-wrap">
               On every Single Porches, Just For New users
             </h5>
           </div>
@@ -402,23 +402,23 @@
         <div class="card-container grid md:grid-cols-3 gap-5">
           <!-- CARD 1 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
               >
                 Best sale
               </button>
-              <p class="text-base capitalize">1 Colors</p>
+              <p class="text-sm md:text-base capitalize">1 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
-              <img src="./assets/mini-table.png" alt="" class="w-auto h-72" />
+              <img src="./assets/mini-table.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize">Garden Table</p>
-                <h3>$39.00</h3>
+                <p class="capitalize text-sm md:text-base">Garden Table</p>
+                <h3 class="capitalize text-base md:text-lg font-semibold">$39.00</h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -430,23 +430,23 @@
 
           <!-- CARD 2 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
               >
                 Top Rated
               </button>
-              <p class="text-base capitalize">4 Colors</p>
+              <p class="text-sm md:text-base capitalize">4 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
-              <img src="./assets/meja-drum.png" alt="" class="w-auto h-72" />
+              <img src="./assets/meja-drum.png" alt="" class="w-auto h-40 md:h-72 object-cover" />
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize">Food Trolley</p>
-                <h3>$54.00</h3>
+                <p class="capitalize text-sm md:text-base">Food Trolley</p>
+                <h3 class="capitalize text-base md:text-lg font-semibold">$54.00</h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -458,23 +458,23 @@
 
           <!-- CARD 3 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
               >
                 Best Price
               </button>
-              <p class="text-base capitalize">2 Colors</p>
+              <p class="text-sm md:text-base capitalize">2 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
-              <img src="./assets/iron-lemari.png" alt="" class="w-auto h-72" />
+              <img src="./assets/iron-lemari.png" alt="" class="w-auto h-40 md:h-72 object-cover"/>
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize">Cove Shelving Unit</p>
-                <h3>$60.00</h3>
+                <p class="capitalize text-sm md:text-base">Cove Shelving Unit</p>
+                <h3 class="capitalize text-base md:text-lg font-semibold">$60.00</h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
@@ -703,7 +703,7 @@
       </section>
 
       <!-- SECTION 8 -->
-      <section class="mt-14">
+      <!-- <section class="mt-14">
         <div class="grid grid-cols-3 gap-5 h-[350px]">
           <div
             class="bg-[#F2F2F2] rounded-3xl h-full flex flex-col justify-center items-center"
@@ -739,7 +739,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- SECTION 9 -->
       <section class="mt-14">
