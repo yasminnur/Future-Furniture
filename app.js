@@ -68,7 +68,6 @@ function loadShow() {
     }
   }
 }
-
 loadShow();
 
 next.onclick = function () {
@@ -79,3 +78,15 @@ prev.onclick = function () {
   active = active - 1 >= 0 ? active - 1 : active;
   loadShow();
 };
+
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
+
+window.addEventListener('load', function() {
+  const menu = document.getElementById('mobile-menu');
+  if (!menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+  }
+});

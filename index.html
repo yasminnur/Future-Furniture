@@ -18,40 +18,56 @@
     </style>
   </head>
   <body>
-    <div class="w-100 px-11 py-9">
+    <div class="w-100 px-5 py-4 md:px-11 md:py-7">
       <!-- NAVBAR -->
       <nav
-        class="navbar px-5 py-6 bg-gray-200 flex rounded-3xl align-items-center mb-4"
+        class="navbar w-full px-4 py-3 md:px-5 md:py-6 bg-gray-200 flex rounded-3xl align-items-center mb-4"
       >
         <div class="nav-kiri flex flex-1 justify-start">
-          <ul class="flex gap-4 text-gray-500 font-medium cursor-pointer">
-            <li
-              class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+          <label
+            for="menu-toggle"
+            class="flex md:hidden cursor-pointer"
+            onclick="toggleMenu()"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <div
+            class="flex md:flex-row w-full md:block md:w-auto"
+            id="mobile-menu"
+          >
+            <ul
+              class="absolute md:static gap-4 text-gray-500 font-medium cursor-pointer flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent"
             >
-              Home
-            </li>
-            <li
-              class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
-            >
-              Shop
-            </li>
-            <li
-              class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
-            >
-              Collections
-            </li>
-            <li
-              class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
-            >
-              About
-            </li>
-            <li
-              class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
-            >
-              Contact Us
-            </li>
-          </ul>
+              <li
+                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+              >
+                Home
+              </li>
+              <li
+                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+              >
+                Shop
+              </li>
+              <li
+                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+              >
+                Collections
+              </li>
+              <li
+                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+              >
+                About
+              </li>
+              <li
+                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+              >
+                Contact Us
+              </li>
+            </ul>
+          </div>
         </div>
+
         <div class="nav-tengah">
           <h3 class="font-extrabold text-2xl">FUPO</h3>
         </div>
@@ -71,15 +87,69 @@
       </nav>
 
       <!-- SECTION 1 -->
-      <!-- <section>
-        <div class="">
+      <section class="mt-5">
+        <div
+          class="relative w-full h-[600px] bg-red-300 overflow-hidden rounded-3xl"
+        >
           <img
-            src="./assets/ruang-tamu.webp"
+            src="./assets/main-wp.jpg"
             alt=""
-            class="w-full h-[560px] object-cover"
+            class="absolute inset-0 w-full h-full object-cover"
           />
+          <h1
+            class="absolute text-9xl font-extrabold uppercase text-wrap inset-x-10 top-6 text-white/70"
+          >
+            FUTURE FOR NOW OR FOREVER
+          </h1>
+          <div
+            class="absoulte-input inset-x-5 absolute px-6 py-4 bottom-6 bg-white grid grid-cols-4 rounded-2xl gap-5"
+          >
+            <div class="colom-1 flex flex-col gap-3">
+              <label for="" class="text-normal">Made By</label>
+              <select
+                id="madeBy"
+                name="madeBy"
+                class="border-2 border-black rounded-lg p-2"
+              >
+                <option value="wood">Wood</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="colom-2 flex flex-col gap-3">
+              <label for="" class="text-normal">Select Type</label>
+              <select
+                id="madeBy"
+                name="madeBy"
+                class="border-2 border-black rounded-lg p-2"
+              >
+                <option value="wood">Sofa</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="colom-3 flex flex-col gap-3">
+              <label for="" class="text-normal">Price</label>
+              <select
+                id="madeBy"
+                name="madeBy"
+                class="border-2 border-black rounded-lg p-2"
+              >
+                <option value="wood">$129-$359</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="colom-4 flex flex-col gap-3">
+              <label for="" class="text-normal text-white/0">search</label>
+             <button class="border-2 border-black bg-gray-950 rounded-lg p-2 text-white">Search</button>
+            </div>
+          </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- SECTION 2 -->
       <section class="">
@@ -90,11 +160,11 @@
           <div
             class="flex items-center justify-center w-32 h-32 p-5 border-2 border-gray-600 rounded-full"
           >
-            <h5 class="text-gray-600 font-semibold">View All</h5>
+            <h5 class="hidden md:flex text-gray-600 font-semibold">View All</h5>
           </div>
         </div>
         <div class="our-collection-card">
-          <div class="grid grid-cols-3 gap-5">
+          <div class="grid w-full md:grid-cols-3 gap-5">
             <!-- CARD 1 -->
             <div
               class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
@@ -290,7 +360,7 @@
             <h5 class="text-2xl font-bold mb-5 text-gray-700">
               (*) Bedside Table
             </h5>
-            <p class="indent-32 text-lg leading-relaxed">
+            <p class="indent-32 text-lg leading-relaxed text-wrap">
               Things You Need To Know There are many variations of passages of
               Lorem Ipsum available.
             </p>
@@ -314,20 +384,22 @@
 
       <!-- SECTION 4 -->
       <section class="mt-14">
-        <div class="head-container grid grid-cols-6 gap-3">
+        <div class="head-container grid md:grid-cols-6 gap-3">
           <div class="flex col-span-5">
             <h1
-              class="text-5xl font-medium text-gray-800 mb-8 capitalize leading-normal"
+              class="text-5xl font-medium text-gray-800 mb-8 capitalize leading-normal text-wrap"
             >
               Shop Our Best <br />
               Quality Product
             </h1>
           </div>
           <div class="flex flex-col">
-            <h5 class="text-lg">On every Single Porches, Just For New users</h5>
+            <h5 class="text-lg text-wrap">
+              On every Single Porches, Just For New users
+            </h5>
           </div>
         </div>
-        <div class="card-container grid grid-cols-3 gap-5">
+        <div class="card-container grid md:grid-cols-3 gap-5">
           <!-- CARD 1 -->
           <div
             class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col max-h-[400px] min-h-[400px]"
@@ -427,10 +499,8 @@
           Most Recomended Product For You!
         </h1>
         <div class="card-container">
-          <div class="grid grid-cols-2 gap-5">
-            <div
-              class="bg-red-200 h-[500px] relative overflow-hidden rounded-3xl group"
-            >
+          <div class="grid w-full md:grid-cols-2 gap-5">
+            <div class="h-[500px] relative overflow-hidden rounded-3xl group">
               <img
                 src="./assets/blu-diningroom.jpg"
                 alt="Dining Room"
@@ -878,7 +948,7 @@
             </div>
             <div class="kanan">
               <div
-                class="px-3 py-2 border-2 border-black flex gap-2 rounded-xl items-center"
+                class="px-3 py-2 border-2 border-black hidden md:flex gap-2 rounded-xl items-center"
               >
                 <input
                   type="email"
@@ -890,17 +960,41 @@
             </div>
           </div>
           <div class="line-kedua relative w-full h-[145px] overflow-hidden">
-            <h1 class="absolute inset-0 font-extrabold text-gray-800 text-[135px] text-justify uppercase block h-full">LET'S TALK WITH US</h1>
+            <h1
+              class="absolute inset-0 font-extrabold text-gray-800 text-[135px] text-justify uppercase block h-full"
+            >
+              LET'S TALK WITH US
+            </h1>
           </div>
           <div class="line-ketiga flex justify-between items-center">
             <p class="text-lg">copyright@2024</p>
             <div class="nav">
-              <ul class="flex text-decoration-none gap-3">
-                <li class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold">Home</li>
-                <li class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold">Shop</li>
-                <li class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold">Collections</li>
-                <li class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold">About</li>
-                <li class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold">Contact Us</li>
+              <ul class="hidden md:flex text-decoration-none gap-3">
+                <li
+                  class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold"
+                >
+                  Home
+                </li>
+                <li
+                  class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold"
+                >
+                  Shop
+                </li>
+                <li
+                  class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold"
+                >
+                  Collections
+                </li>
+                <li
+                  class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold"
+                >
+                  About
+                </li>
+                <li
+                  class="px-3 py-2 text-lg font-medium cursor-pointer border-b-2 border-transparent hover:border-black hover:font-bold"
+                >
+                  Contact Us
+                </li>
               </ul>
             </div>
           </div>
