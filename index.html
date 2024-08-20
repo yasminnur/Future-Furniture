@@ -14,49 +14,49 @@
     <style></style>
   </head>
   <body>
-    <div class="w-100 px-4 py-4 md:px-11 md:py-7">
+    <div class="w-100 p-4 md:p-6 lg:px-11 lg:py-7">
       <!-- NAVBAR -->
       <nav
-        class="navbar w-full px-4 py-3 md:px-5 md:py-6 bg-gray-200 flex rounded-3xl align-items-center mb-4"
+        class="navbar w-full px-4 py-3 md:px-5 md:py-4 lg:px-5 lg:py-6 bg-gray-200 grid grid-cols-3 rounded-xl lg:rounded-3xl align-items-center mb-4"
       >
-        <div class="nav-kiri flex flex-1 justify-start">
+        <div class="nav-kiri flex flex-1 justify-start items-center">
           <label
             for="menu-toggle"
-            class="flex md:hidden cursor-pointer"
+            class="flex lg:hidden cursor-pointer"
             onclick="toggleMenu()"
           >
             <i class="fa-solid fa-bars"></i>
           </label>
 
           <div
-            class="flex md:flex-row w-full md:block md:w-auto"
+            class="flex lg:flex-row w-full lg:block lg:w-auto"
             id="mobile-menu"
           >
             <ul
-              class="absolute md:static gap-4 text-gray-500 font-medium cursor-pointer flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent"
+              class="absolute md:static md:gap-3 lg:gap-4 text-gray-500 font-medium cursor-pointer flex flex-col p-4 md:p-0 mt-4 md:flex-row lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent"
             >
               <li
-                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+                class="hover:text-black p-1 text-sm lg:text-lg text-nowrap border-b border-transparent hover:border-b hover:border-black"
               >
                 Home
               </li>
               <li
-                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+                class="hover:text-black p-1 text-sm lg:text-lg text-nowrap border-b border-transparent hover:border-b hover:border-black"
               >
                 Shop
               </li>
               <li
-                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+                class="hover:text-black p-1 text-sm lg:text-lg text-nowrap border-b border-transparent hover:border-b hover:border-black"
               >
                 Collections
               </li>
               <li
-                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+                class="hover:text-black p-1 text-sm lg:text-lg text-nowrap border-b border-transparent hover:border-b hover:border-black"
               >
                 About
               </li>
               <li
-                class="hover:text-black p-1 border-b border-transparent hover:border-b hover:border-black"
+                class="hover:text-black p-1 text-sm lg:text-lg text-nowrap border-b border-transparent hover:border-b hover:border-black"
               >
                 Contact Us
               </li>
@@ -64,10 +64,11 @@
           </div>
         </div>
 
-        <div class="nav-tengah">
+        <div class="nav-tengah flex justify-center">
           <h3 class="font-extrabold text-2xl">FUPO</h3>
         </div>
-        <div class="nav-kanan flex flex-1 justify-end">
+
+        <div class="nav-kanan flex flex-1 justify-end items-center">
           <ul class="flex gap-4 cursor-pointer">
             <li>
               <i class="fa-solid fa-bag-shopping"></i>
@@ -85,7 +86,7 @@
       <!-- SECTION 1 -->
       <section class="mt-5">
         <div
-          class="relative w-full h-[550px] md:h-[600px] bg-red-300 overflow-hidden rounded-xl md:rounded-3xl"
+          class="relative w-full h-[550px] md:h-[500px] lg:h-[600px] bg-red-300 overflow-hidden rounded-xl lg:rounded-3xl"
         >
           <img
             src="./assets/main-wp.jpg"
@@ -93,64 +94,64 @@
             class="absolute inset-0 w-full h-full object-cover"
           />
           <h1
-            class="absolute text-5xl md:text-9xl font-extrabold uppercase text-wrap inset-x-4 md:inset-x-10 top-3 md:top-6 text-white/70"
+            class="absolute text-5xl md:text-8xl lg:text-9xl font-extrabold uppercase text-wrap inset-x-4 md:inset-x-5 lg:inset-x-10 top-3 md:top-5 lg:top-6 text-white/70"
           >
             FUTURE FOR NOW OR FOREVER
           </h1>
           <div
-            class="absoulte-input inset-x-3 md:inset-x-5 absolute px-3 py-2 md:px-6 md:py-4 bottom-4 md:bottom-6 bg-white grid grid-rows-4 grid-cols-1 md:grid-cols-4 md:grid-rows-1 rounded-xl md:rounded-2xl gap-2 md:gap-3"
+            class="absoulte-input inset-x-3 md:inset-x-5 absolute px-3 py-2 md:py-4 lg:px-6 lg:py-4 bottom-4 md:bottom-6 bg-white grid grid-rows-4 grid-cols-1 md:grid-cols-4 md:grid-rows-1 rounded-xl lg:rounded-2xl gap-2 md:gap-3"
           >
-            <div class="kolom-1 flex flex-col gap-2 md:gap-3">
-              <label for="" class="text-sm text-normal md:text-lg"
+            <div class="kolom-1 flex flex-col gap-2 lg:gap-3">
+              <label for="" class="text-sm text-normal md:text-base lg:text-lg"
                 >Made By</label
               >
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
+                class="border md:border-2 border-black rounded-lg p-1 lg:p-2 text-sm md:text-base lg:text-lg"
               >
-                <option value="wood">Wood</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="wood" class="text-sm md:text-base lg:text-lg">Wood</option>
+                <option value="saab" class="text-sm md:text-base lg:text-lg">Saab</option>
+                <option value="fiat" class="text-sm md:text-base lg:text-lg">Fiat</option>
+                <option value="audi" class="text-sm md:text-base lg:text-lg">Audi</option>
               </select>
             </div>
-            <div class="kolom-2 flex flex-col gap-2 md:gap-3">
-              <label for="" class="text-sm text-normal md:text-lg"
+            <div class="kolom-2 flex flex-col gap-2 lg:gap-3">
+              <label for="" class="text-sm text-normal md:text-base lg:text-lg"
                 >Select Type</label
               >
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
+                class="border md:border-2 border-black rounded-lg p-1 lg:p-2 text-sm md:text-base lg:text-lg"
               >
-                <option value="wood">Sofa</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="wood" class="text-sm md:text-base lg:text-lg">Sofa</option>
+                <option value="saab" class="text-sm md:text-base lg:text-lg">Saab</option>
+                <option value="fiat" class="text-sm md:text-base lg:text-lg">Fiat</option>
+                <option value="audi" class="text-sm md:text-base lg:text-lg">Audi</option>
               </select>
             </div>
-            <div class="kolom-3 flex flex-col gap-2 md:gap-3">
-              <label for="" class="text-sm text-normal md:text-lg">Price</label>
+            <div class="kolom-3 flex flex-col gap-2 lg:gap-3">
+              <label for="" class="text-normal text-sm md:text-base lg:text-lg">Price</label>
               <select
                 id="madeBy"
                 name="madeBy"
-                class="border md:border-2 border-black rounded-lg p-1 md:p-2 text-sm md:text-lg"
+                class="border md:border-2 border-black rounded-lg p-1 lg:p-2 text-sm md:text-base lg:text-lg"
               >
-                <option value="wood">$129-$359</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="wood" class="text-sm md:text-base lg:text-lg">$129-$359</option>
+                <option value="saab" class="text-sm md:text-base lg:text-lg">Saab</option>
+                <option value="fiat" class="text-sm md:text-base lg:text-lg">Fiat</option>
+                <option value="audi" class="text-sm md:text-base lg:text-lg">Audi</option>
               </select>
             </div>
-            <div class="kolom-4 flex flex-col gap-3">
+            <div class="kolom-4 flex flex-col gap-2 lg:gap-3">
               <label
                 for=""
-                class="text-sm text-normal md:text-lg text-white/0 hidden md:flex"
+                class="text-normal text-sm md:text-base lg:text-lg text-white/0 hidden md:flex"
                 >search</label
               >
               <button
-                class="text-sm text-normal md:text-lg border-2 border-black bg-gray-950 rounded-lg p-2 text-white mt-4 md:mt-0"
+                class="text-normal text-sm md:text-base lg:text-lg border-2 border-black bg-gray-950 rounded-lg p-1 lg:p-2 text-white mt-4 md:mt-0"
               >
                 Search
               </button>
@@ -162,245 +163,245 @@
       <!-- SECTION 2 -->
       <section class="mt-14">
         <div
-          class="our-collection-nav flex justify-between items-center mb-4 md:mb-3"
+          class="our-collection-nav flex justify-between items-center mb-4 lg:mb-3"
         >
           <h1
-            class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize"
+            class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 capitalize"
           >
             Our Collections
           </h1>
           <div
-            class="flex items-center justify-center w-14 h-14 md:w-32 md:h-32 p-2 md:p-5 border-2 border-gray-600 rounded-full"
+            class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-32 lg:h-32 p-2 md:p-3 lg:p-5 border-2 border-gray-600 rounded-full"
           >
             <h5
-              class="flex text-gray-600 font-semibold text-[10px] md:text-lg text-nowrap"
+              class="flex text-gray-600 font-semibold text-[10px] md:text-sm lg:text-lg text-nowrap"
             >
               View All
             </h5>
           </div>
         </div>
         <div class="our-collection-card">
-          <div class="grid w-full md:grid-cols-3 gap-5">
+          <div class="grid w-full md:grid-cols-3 md:gap-3 lg:gap-5">
             <!-- CARD 1 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Best sale
                 </button>
-                <p class="text-sm md:text-base capitalize">6 Colors</p>
+                <p class="text-sm lg:text-base capitalize">6 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
                 <img
                   src="./assets/card2.png"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">
+                  <p class="capitalize text-sm lg:text-base">
                     Papillon wally Light
                   </p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $40.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
 
             <!-- CARD 2 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Top Rated
                 </button>
-                <p class="text-sm md:text-base capitalize">3 Colors</p>
+                <p class="text-sm lg:text-base capitalize">3 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
                 <img
                   src="./assets/card2.png"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">
+                  <p class="capitalize text-sm lg:text-base">
                     Pilke Pendant Lamp
                   </p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $34.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
 
             <!-- CARD 3 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-sm md:text-base capitalize">1 Colors</p>
+                <p class="text-sm lg:text-base capitalize">1 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
                 <img
                   src="./assets/card3.png"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">Low Oak Stool</p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <p class="capitalize text-sm lg:text-base">Low Oak Stool</p>
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $30.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
 
             <!-- CARD 4 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-sm md:text-base capitalize">1 Colors</p>
+                <p class="text-sm lg:text-base capitalize">1 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
                 <img
                   src="./assets/lamp2.ashx"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">
+                  <p class="capitalize text-sm lg:text-base">
                     Orient Pendant Lamp
                   </p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $52.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
 
             <!-- CARD 5 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Best Sale
                 </button>
-                <p class="text-sm md:text-base capitalize">6 Colors</p>
+                <p class="text-sm lg:text-base capitalize">6 Colors</p>
               </div>
               <div class="flex justify-center items-center flex-grow">
                 <img
                   src="./assets/card5.png"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auro"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">
+                  <p class="capitalize text-sm lg:text-base">
                     Papillon wally Light
                   </p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $40.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
 
             <!-- CARD 6 -->
             <div
-              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+              class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
             >
               <div class="top-card flex justify-between items-center">
                 <button
-                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                  class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
                 >
                   Best Price
                 </button>
-                <p class="text-sm md:text-base capitalize">1 Colors</p>
+                <p class="text-sm lg:text-base capitalize">1 Colors</p>
               </div>
-              <div class="flex justify-center flex-grow">
+              <div class="flex justify-center items-center flex-grow ">
                 <img
                   src="./assets/card6.png"
                   alt=""
-                  class="w-auto h-40 md:h-72 object-cover"
+                  class="w-auto h-40 lg:h-72 object-cover"
                 />
               </div>
               <div
                 class="bottom-card flex justify-between items-center mt-auto"
               >
                 <div class="desc">
-                  <p class="capitalize text-sm md:text-base">Grey Sofa</p>
-                  <h3 class="capitalize text-base md:text-lg font-semibold">
+                  <p class="capitalize text-sm lg:text-base">Grey Sofa</p>
+                  <h3 class="capitalize text-base lg:text-lg font-semibold">
                     $76.00
                   </h3>
                 </div>
                 <button
                   class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
                 </button>
               </div>
             </div>
@@ -410,25 +411,25 @@
 
       <!-- SECTION 3 -->
       <section class="mt-14">
-        <h1 class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 capitalize mb-4 md:mb-5">
           Furniture quality
         </h1>
         <div
-          class="content grid w-full md:grid-cols-3 gap-y-4 mt-3 md:mt-0 md:gap-x-10 md:min-h-[500px] md:max-h-[500px]"
+          class="content grid w-full md:grid-cols-2 lg:grid-cols-3 gap-y-4 md:gap-x-5 lg:gap-x-10 "
         >
-          <div class="flex flex-col md:justify-end md:py-10 gap-y-2 md:gap-y-5">
-            <h5 class="text-lg md:text-2xl font-bold text-gray-700">
+          <div class="flex flex-col md:justify-end gap-y-2 lg:gap-y-5">
+            <h5 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-700">
               (*) Bedside Table
             </h5>
             <p
-              class="md:indent-32 text-sm md:text-lg leading-relaxed text-wrap text-justify"
+              class="md:indent-32 text-sm md:text-base lg:text-lg leading-relaxed text-wrap text-justify"
             >
               Things You Need To Know There are many variations of passages of
               Lorem Ipsum available.
             </p>
           </div>
           <div
-            class="w-full md:col-span-2 flex relative min-h-[300px] max-h-[300px] md:h-full overflow-hidden justify-center items-center cursor-pointer rounded-xl md:rounded-3xl"
+            class="w-full lg:col-span-2 flex relative bg-red-300 min-h-[300px] max-h-[300px] lg:min-h-[500px] lg:max-h-[500px] overflow-hidden justify-center items-center cursor-pointer rounded-xl md:rounded-3xl"
           >
             <img
               src="./assets/vidio.jpg"
@@ -438,7 +439,7 @@
             <div
               class="flex absolute w-full h-full justify-center items-center rounded-3xl bg-bg-slate-100/0 hover:bg-slate-100/20 border-2 border-transparent hover:border-black"
             >
-              <i class="fa-solid fa-play-circle text-4xl md:text-7xl"></i>
+              <i class="fa-solid fa-play-circle text-4xl md:text-5xl lg:text-7xl"></i>
             </div>
           </div>
         </div>
@@ -447,133 +448,132 @@
       <!-- SECTION 4 -->
       <section class="mt-14">
         <div
-          class="head-container grid md:grid-cols-6 gap-y-3 md:gap-3 mb-4 md:mb-0"
+          class="head-container grid md:grid-cols-2 lg:grid-cols-6 md:gap-x-8 lg:gap-3 mb-4 md:mb-5"
         >
-          <div class="flex col-span-5">
+          <div class="flex lg:col-span-5">
             <h1
-              class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize"
+              class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 capitalize"
             >
-              Shop Our Best <br />
-              Quality Product
+              Shop Our Best Quality Product
             </h1>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col text-end">
             <h5 class="text-sm md:text-lg text-wrap">
               On every Single Porches, Just For New users
             </h5>
           </div>
         </div>
-        <div class="card-container grid md:grid-cols-3 gap-5">
+        <div class="card-container grid md:grid-cols-3 md:gap-3 lg:gap-5">
           <!-- CARD 1 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
               >
                 Best sale
               </button>
-              <p class="text-sm md:text-base capitalize">1 Colors</p>
+              <p class="text-sm lg:text-base capitalize">1 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
               <img
                 src="./assets/mini-table.png"
                 alt=""
-                class="w-auto h-40 md:h-72 object-cover"
+                class="w-auto h-40 lg:h-72 object-cover"
               />
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize text-sm md:text-base">Garden Table</p>
-                <h3 class="capitalize text-base md:text-lg font-semibold">
+                <p class="capitalize text-sm lg:text-base">Garden Table</p>
+                <h3 class="capitalize text-base lg:text-lg font-semibold">
                   $39.00
                 </h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
               >
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
               </button>
             </div>
           </div>
 
           <!-- CARD 2 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
               >
                 Top Rated
               </button>
-              <p class="text-sm md:text-base capitalize">4 Colors</p>
+              <p class="text-sm lg:text-base capitalize">4 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
               <img
                 src="./assets/meja-drum.png"
                 alt=""
-                class="w-auto h-40 md:h-72 object-cover"
+                class="w-auto h-40 lg:h-72 object-cover"
               />
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize text-sm md:text-base">Food Trolley</p>
-                <h3 class="capitalize text-base md:text-lg font-semibold">
+                <p class="capitalize text-sm lg:text-base">Food Trolley</p>
+                <h3 class="capitalize text-base lg:text-lg font-semibold">
                   $54.00
                 </h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
               >
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
               </button>
             </div>
           </div>
 
           <!-- CARD 3 -->
           <div
-            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:max-h-[400px] md:min-h-[400px]"
+            class="bg-[#F2F2F2] rounded-2xl p-4 flex flex-col min-h-[300px] max-h-[300px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[400px] lg:min-h-[400px]"
           >
             <div class="top-card flex justify-between items-center">
               <button
-                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm md:text-base capitalize"
+                class="bg-white px-2 py-1 text-gray-500 rounded-full text-sm lg:text-base capitalize"
               >
                 Best Price
               </button>
-              <p class="text-sm md:text-base capitalize">2 Colors</p>
+              <p class="text-sm lg:text-base capitalize">2 Colors</p>
             </div>
             <div class="flex justify-center items-center flex-grow">
               <img
                 src="./assets/iron-lemari.png"
                 alt=""
-                class="w-auto h-40 md:h-72 object-cover"
+                class="w-auto h-40 lg:h-72 object-cover"
               />
             </div>
             <div class="bottom-card flex justify-between items-center mt-auto">
               <div class="desc">
-                <p class="capitalize text-sm md:text-base">
+                <p class="capitalize text-sm lg:text-base">
                   Cove Shelving Unit
                 </p>
-                <h3 class="capitalize text-base md:text-lg font-semibold">
+                <h3 class="capitalize text-base lg:text-lg font-semibold">
                   $60.00
                 </h3>
               </div>
               <button
                 class="flex bg-white p-3 rounded-full w-15 h-15 justify-center items-center"
               >
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-bag-shopping md:text-sm lg:text-lg"></i>
               </button>
             </div>
           </div>
         </div>
         <div class="dsb-container flex justify-center mt-6">
           <div
-            class="flex items-center justify-center w-14 h-14 md:w-32 md:h-32 p-2 md:p-5 border-2 border-gray-600 rounded-full"
+            class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-32 lg:h-32 p-2 md:p-3 lg:p-5 border-2 border-gray-600 rounded-full"
           >
             <h5
-              class="flex text-gray-600 font-semibold text-[10px] md:text-lg text-nowrap"
+              class="flex text-gray-600 font-semibold text-[10px] md:text-sm lg:text-lg text-nowrap"
             >
               View All
             </h5>
@@ -584,14 +584,14 @@
       <!-- SECTION 5 -->
       <section class="mt-14">
         <h1
-          class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize mb-4 md:mb-0"
+          class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 capitalize mb-4 md:mb-5"
         >
           Most Recomended Product For You!
         </h1>
         <div class="card-container">
           <div class="grid w-full md:grid-cols-2 gap-y-4 md:gap-5">
             <div
-              class="min-h-[200px] max-h-[200px] md:max-h-[500px] md:min-h-[500px] relative overflow-hidden rounded-xl md:rounded-3xl group"
+              class="min-h-[200px] max-h-[200px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[500px] lg:min-h-[500px] relative overflow-hidden rounded-xl lg:rounded-3xl group"
             >
               <img
                 src="./assets/blu-diningroom.jpg"
@@ -601,20 +601,20 @@
               <div
                 class="absolute w-full h-full inset-0 bg-black/20 flex flex-col gap-4 justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                <h3 class="text-xl md:text-4xl font-semibold text-white">
+                <h3 class="text-xl md:text-3xl lg:text-4xl font-semibold text-white">
                   Dinning Room
                 </h3>
                 <div
-                  class="flex items-center justify-center w-14 h-14 md:w-28 md:h-28 p-2 md:p-5 border-2 border-white rounded-full group-hover:backdrop-blur"
+                  class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-28 lg:h-28 p-2 lg:p-5 border-2 border-white rounded-full group-hover:backdrop-blur"
                 >
-                  <h5 class="text-[10px] md:text-lg text-white font-semibold">
+                  <h5 class="text-[10px] md:text-[13px] lg:text-lg text-white text-nowrap font-semibold">
                     View All
                   </h5>
                 </div>
               </div>
             </div>
             <div
-              class="min-h-[200px] max-h-[200px] md:max-h-[500px] md:min-h-[500px] relative overflow-hidden rounded-3xl group"
+              class="min-h-[200px] max-h-[200px] md:min-h-[300px] md:max-h-[300px] lg:max-h-[500px] lg:min-h-[500px] relative overflow-hidden rounded-xl lg:rounded-3xl group"
             >
               <img
                 src="./assets/pink-room.jpg"
@@ -624,13 +624,13 @@
               <div
                 class="absolute w-full h-full inset-0 bg-black/20 flex flex-col gap-4 justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                <h3 class="text-xl md:text-4xl font-semibold text-white">
+                <h3 class="text-xl md:text-3xl lg:text-4xl font-semibold text-white">
                   Bed Room
                 </h3>
                 <div
-                  class="flex items-center justify-center w-14 h-14 md:w-28 md:h-28 p-2 md:p-5 border-2 border-white rounded-full group-hover:backdrop-blur"
+                  class="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-28 lg:h-28 p-2 lg:p-5 border-2 border-white rounded-full group-hover:backdrop-blur"
                 >
-                  <h5 class="text-[10px] md:text-lg text-white font-semibold">
+                  <h5 class="text-[10px] md:text-[13px] lg:text-lg text-white text-nowrap font-semibold">
                     View All
                   </h5>
                 </div>
@@ -642,14 +642,14 @@
 
       <!-- SECTION 6 -->
       <section
-        class="mt-14 min-h-[450px] max-h-[450px] md:min-h-[620px] md:max-h-[620px]"
+        class="mt-14 min-h-[450px] max-h-[450px] md:min-h-[500px] md:max-h-[500px] lg:min-h-[620px] lg:max-h-[620px]"
       >
-        <h1 class="text-3xl md:text-5xl font-semibold text-gray-800 capitalize">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 capitalize">
           Shop By Room
         </h1>
         <div class="content flex flex-col">
           <div
-            class="relative py-5 md:py-7 hover:py-7 md:hover:py-12 border-black group duration-300"
+            class="relative py-5 hover:py-7 lg:py-7 lg:hover:py-12 border-black group duration-300"
           >
             <div class="flex justify-between items-center">
               <h3
@@ -660,7 +660,7 @@
               <img
                 src="./assets/right-arrow.png"
                 alt=""
-                class="w-6 h-6 md:w-10 md:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
+                class="w-6 h-6 md:w-7 md:h-7 lg:w-10 lg:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
               />
             </div>
             <img
@@ -682,7 +682,7 @@
               <img
                 src="./assets/right-arrow.png"
                 alt=""
-                class="w-6 h-6 md:w-10 md:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
+                class="w-6 h-6 md:w-7 md:h-7 lg:w-10 lg:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
               />
             </div>
             <img
@@ -704,7 +704,7 @@
               <img
                 src="./assets/right-arrow.png"
                 alt=""
-                class="w-6 h-6 md:w-10 md:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
+                class="w-6 h-6 md:w-7 md:h-7 lg:w-10 lg:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
               />
             </div>
             <img
@@ -726,7 +726,7 @@
               <img
                 src="./assets/right-arrow.png"
                 alt=""
-                class="w-6 h-6 md:w-10 md:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
+                class="w-6 h-6 md:w-7 md:h-7 lg:w-10 lg:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
               />
             </div>
             <img
@@ -748,7 +748,7 @@
               <img
                 src="./assets/right-arrow.png"
                 alt=""
-                class="w-6 h-6 md:w-10 md:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
+                class="w-6 h-6 md:w-7 md:h-7 lg:w-10 lg:h-10 -rotate-45 cursor-pointer group-hover:rotate-2 duration-300"
               />
             </div>
             <img
@@ -759,13 +759,12 @@
           </div>
           <div class="w-full h-[1.5px] md:h-[2px] bg-black"></div>
         </div>
-        <!-- </div> -->
       </section>
 
       <!-- SECTION 7 -->
-      <section class="mt-12 md:mt-14">
+      <section class="mt-12">
         <div
-          class="relative min-h-[350px] max-h-[350px] md:min-h-[600px] md:max-h-[600px] w-100 rounded-xl md:rounded-3xl overflow-hidden p-16"
+          class="relative min-h-[350px] max-h-[350px] md:min-h-[400px] md:max-h-[400px] lg:min-h-[600px] lg:max-h-[600px] w-100 rounded-xl lg:rounded-3xl overflow-hidden p-16"
         >
           <img
             src="./assets/lets.jpg"
@@ -774,22 +773,22 @@
           />
           <div class="absolute inset-0 w-full h-full bg-black/5"></div>
           <h2
-            class="absolute inset-0 px-3 py-5 md:p-10 text-5xl md:text-8xl leading-none font-bold text-[#F2F2F2]"
+            class="absolute inset-0 px-3 py-5 md:p-5 lg:p-10 text-5xl md:text-7xl lg:text-8xl leading-none font-bold text-[#F2F2F2]"
           >
             LET'S TALK <br />
             WITH US
           </h2>
           <!-- Card  -->
           <div
-            class="card-absolute flex flex-col gap-y-2 md:gap-y-3 absolute md:right-[15%] md:bottom-10 bottom-3 inset-x-3 md:w-[300px]"
+            class="card-absolute flex flex-col gap-y-2 lg:gap-y-3 absolute md:right-[3%] lg:right-[15%] lg:bottom-10 bottom-3 md:w-[300px]"
           >
             <p
-              class="subscribe text-sm md:text-lg font-semibold bg-gray-100 py-2 px-4 rounded-xl"
+              class="subscribe text-sm md:text-base lg:text-lg font-semibold bg-gray-100 py-2 px-4 md:px-3 lg:px-4 rounded-xl"
             >
               Subscribe to Our Newsletter for More Information
             </p>
-            <div class="email-card bg-gray-100 py-4 px-4 rounded-xl">
-              <p class="mb-3 text-sm md:text-xl">
+            <div class="email-card bg-gray-100 p-4 md:px-3 lg:p-4 rounded-xl">
+              <p class="mb-3 text-sm md:text-base lg:text-xl">
                 Get all update about our store. Just subscribe and get all news
                 instanly.
               </p>
@@ -801,7 +800,7 @@
                   placeholder="Enter Your Email"
                   class="border-none bg-transparent text-black text-sm"
                 />
-                <i class="fa-solid fa-arrow-right text-sm md:text-lg"></i>
+                <i class="fa-solid fa-arrow-right text-sm md:text-base lg:text-lg"></i>
               </div>
             </div>
           </div>
@@ -810,60 +809,64 @@
 
       <!-- SECTION 8 -->
       <section class="mt-14">
-        <div class="grid grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-5">
+        <div class="grid grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-5 md:gap-3 lg:gap-5">
+
           <div
-            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] md:min-h-[350px] md:max-h-[350px] rounded-3xl flex flex-col justify-center items-center"
+            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] lg:min-h-[350px] lg:max-h-[350px] rounded-xl lg:rounded-3xl flex flex-col justify-center items-center"
           >
-            <i class="fa-solid fa-box text-5xl md:text-6xl mb-3 md:mb-7"></i>
+            <i class="fa-solid fa-box text-5xl lg:text-6xl mb-3 lg:mb-7"></i>
             <h5
-              class="text-2xl md:text-3xl font-medium text-gray-800 capitalize"
+              class="text-2xl lg:text-3xl font-medium text-gray-800 capitalize"
             >
               Made To Order
             </h5>
-            <p class="text-sm md:text-lg text-gray-800 font-normal">
+            <p class="text-sm lg:text-lg text-gray-800 font-normal">
               All pieces made to order for you
             </p>
           </div>
+
           <div
-            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] md:min-h-[350px] md:max-h-[350px] rounded-3xl flex flex-col justify-center items-center"
+            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] lg:min-h-[350px] lg:max-h-[350px] rounded-xl lg:rounded-3xl flex flex-col justify-center items-center"
           >
             <i
-              class="fa-solid fa-truck-fast text-5xl md:text-6xl mb-3 md:mb-7"
+              class="fa-solid fa-truck-fast text-5xl lg:text-6xl mb-3 lg:mb-7"
             ></i>
             <h5
-              class="text-2xl md:text-3xl font-medium text-gray-800 capitalize"
+              class="text-2xl lg:text-3xl font-medium text-gray-800 capitalize"
             >
               Free Delivery
             </h5>
-            <p class="text-sm md:text-lg text-gray-800 font-normal">
+            <p class="text-sm lg:text-lg text-gray-800 font-normal">
               Free delivery for order world-wide
             </p>
           </div>
+
           <div
-            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] md:min-h-[350px] md:max-h-[350px] rounded-3xl flex flex-col justify-center items-center"
+            class="bg-[#F2F2F2] max-h-[250px] min-h-[250px] lg:min-h-[350px] lg:max-h-[350px] rounded-xl lg:rounded-3xl flex flex-col justify-center items-center"
           >
             <i
-              class="fa-solid fa-arrows-spin text-5xl md:text-6xl mb-3 md:mb-7"
+              class="fa-solid fa-arrows-spin text-5xl lg:text-6xl mb-3 lg:mb-7"
             ></i>
             <h5
-              class="text-2xl md:text-3xl font-medium text-gray-800 capitalize"
+              class="text-2xl lg:text-3xl font-medium text-gray-800 capitalize"
             >
               free exchange
             </h5>
-            <p class="text-sm md:text-lg text-gray-800 font-normal">
+            <p class="text-sm lg:text-lg text-gray-800 font-normal">
               Free exchange on all products
             </p>
           </div>
+          
         </div>
       </section>
 
       <!-- SECTION 9 -->
       <section class="mt-14">
         <div
-          class="md:h-[600px] bg-[#F2F2F2] w-full rounded-xl md:rounded-3xl flex flex-col md:flex-row"
+          class="lg:h-[600px] bg-[#F2F2F2] w-full rounded-xl lg:rounded-3xl flex flex-col lg:flex-row"
         >
           <div
-            class="left-content relative h-[300px] md:h-full w-full md:w-1/2 overflow-hidden rounded-b-none rounded-t-xl md:rounded-3xl"
+            class="left-content relative h-[300px] lg:h-full w-full lg:w-1/2 overflow-hidden rounded-b-none rounded-t-xl lg:rounded-3xl"
           >
             <img
               src="./assets/livingroom.jpeg"
@@ -871,11 +874,12 @@
               class="absolute w-full h-full object-cover scale-x-1 object-right"
             />
             <div
-              class="flex absolute w-full h-full justify-center items-center rounded-3xl bg-bg-slate-100/0 hover:bg-slate-100/20 border-2 border-transparent hover:border-black"
+              class="flex absolute w-full h-full justify-center items-center lg:rounded-3xl bg-bg-slate-100/0 hover:bg-slate-100/20 border-2 border-transparent hover:border-black"
             >
-              <i class="fa-solid fa-play-circle text-5xl md:text-7xl"></i>
+              <i class="fa-solid fa-play-circle text-5xl md:text-6xl lg:text-7xl"></i>
             </div>
           </div>
+
           <div class="right-content w-full">
             <div
               class="slider relative min-h-[500px] max-h-[500px] md:h-full w-full overflow-hidden"

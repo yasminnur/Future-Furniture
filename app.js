@@ -30,7 +30,6 @@ function loadShow() {
       items[i].style.transform += `translate(-50%, -50%) scale(1) rotate(-10deg)`;
       items[i].style.bottom += `-10%`;
       items[i].style.left += `80%`;
-      items[i].style.color = "red";
       items[i].style.opacity = 0.6;
     } else if (i === active + 2) {
       items[i].style.transformOrigin = "bottom right";
@@ -40,7 +39,6 @@ function loadShow() {
       items[i].style.color = "black";
       items[i].style.opacity = 0.1;
     } else {
-      items[i].style.color = "blue";
     }
   }
   stt = 0;
@@ -55,16 +53,13 @@ function loadShow() {
       items[i].style.bottom += `15%`;
       items[i].style.left += `15%`;
       items[i].style.opacity = 0.6;
-      items[i].style.color = "purple";
     } else if (i === active - 2) {
       items[i].style.transformOrigin = "top right";
       items[i].style.transform += `translate(-50%, -50%) rotate(-15deg)`;
       items[i].style.bottom += `-23%`;
       items[i].style.left += `17%`;
       items[i].style.opacity = 0.1;
-      items[i].style.color = "red";
     } else {
-      items[i].style.color = "blue";
     }
   }
 }
